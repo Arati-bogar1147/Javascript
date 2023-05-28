@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">this is heading</h1>
+    <br>
+    <br>
+    <button onclick="task()">Click me</button>
+
+    <script>
+        var element=document.getElementById("heading")
+        var color=element.style.color='red';
+        function task()
+        {
+            if (color=='red') {
+                element.style.color='green'
+                
+            }
+             else {
+                element.style.color='red'
+                
+            }
+            var font=element.style.fontsize='40px'
+            if (font=='40px') {
+                element.style.fontSize='100px'
+                
+            } 
+            else {
+                element.style.fontsize='40px'
+                
+            }
+
+            var bg=element.style.backgroundColor="yellow"
+            if (bg=='yellow') {
+                element.style.backgroundColor='red'
+                
+            } 
+            else {
+                element.style.backgroundColor=" yellow"
+                
+            }
+            
+                
+            
+        }
+    </script>
+    
+</body>
+</html>

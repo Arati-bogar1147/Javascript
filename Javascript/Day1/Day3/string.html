@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. by Using Literals
+        var str="string"
+        console.log(str);
+        console.log(typeof str);
+
+        // 2. by using new keyword
+        var str2=new String('string1')
+        console.log(str2);
+        console.log(typeof str2);
+
+        //slice method
+        var str3="Arati Hanmant Bogar"
+        console.log(str3.slice(4,14));
+        console.log(str3.slice(-4));
+
+        //uppercase
+        var str4="uppercase"
+        console.log(str4.toUpperCase());
+
+        //lowercase
+        var str5="LOWERCASE"
+        console.log(str5.toLowerCase());
+
+        //concat two string
+        console.log(str4+str5);
+        console.log(str4.concat(str5));
+
+        //charAt method
+        var str7="pune"
+        console.log(str7.charAt(2));
+
+        //repeat method
+        var str8="bengaluru"
+        console.log(str8.repeat(5));
+
+        //charcodeAt method
+         console.log(str7.charCodeAt(3));
+
+         //replace
+         var str9="mumbai to pune"
+         //console.log(str9);
+         console.log(str9.replace('mumbai','goa'));
+
+        
+        //include
+         console.log(str9.includes("Mum"));
+
+         //indexOf
+         var str10="string"
+         console.log(str10.indexOf("s"));   
+    </script>
+    
+</body>
+</html>

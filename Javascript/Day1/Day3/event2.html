@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 200px;
+        width: 200px;
+        margin: 200px auto;
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+</head>
+<body>
+    <div id="box" onmouseup="task()" onmousedown="task1()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, illo cumque sint enim quo fugiat.</div>
+    <script>
+        function task(){
+            var element=document.getElementById('box')
+            element.style.fontSize='40px';
+            element.style.overflow='scroll';
+            element.style.borderRadius='50%';    
+        }
+        function task1(){
+            var element=document.getElementById('box')
+            element.style.fontSize='10px';
+            element.style.borderRadius='0%';
+        }
+
+    </script>
+
+    
+</body>
+</html>

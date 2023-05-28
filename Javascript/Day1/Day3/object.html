@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OBJECT creation directly
+         var obj={
+             name:"gangubai",
+             age:23,
+            add:"mumbai",
+            nestobj:{
+                 name:"rahul",
+                 add:"pune"
+             }
+         }
+         console.log(obj);
+         console.log(obj .name);
+         console.log( obj.age);
+         console.log(obj.nestobj);   
+         //MODIFY the object
+         obj.name="john",
+         console.log(obj);
+
+        //PASSING AN ARRAY INSIDE OBJECT
+         var obj1={
+             name:["mala","jaya","jay","rahul"],
+             fun:function(){
+                 console.log("this is the function inside an object");
+             }
+         }
+         console.log(obj1.name[2]);
+         console.log(obj1.name[1]);
+         console.log(obj1.fun());
+
+        //OBJECT CREATION BY USING NEW KEYWORD
+          var obj2=new Object(
+             {
+             loc:"colombo",
+             hobbies:"cricket",
+             plyer:"Hitman",
+         }
+         )
+         console.log(obj2.loc); 
+        
+        //FUNCTION CONSTRUCTOR METHOD
+        let Person=function(){
+            this.name="suraj",
+            this.age=23,
+            this.sal="8lpa",
+            this.obj={
+                country:"india",
+                flag:"tiranga"
+            }
+            this.arr=[{name:"nestedobject",loc:"inside array"},{name:"nestedobj2",loc:inside array2}]
+        }
+        let person=new Person();
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.obj.country);
+        console.log(person.arr[0]);
+        //UPDATE
+        person.name="Ashish";
+        console.log(person);
+
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

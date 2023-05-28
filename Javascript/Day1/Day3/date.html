@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DATE object
+        var a=new Date()
+        console.log(a);
+        var b=new Date(2020,2,10,12,45,23,44) //new Date(yyyy,mm,dd,hours,min,sec)
+        console.log(b);
+        var c=new Date("1998/02/25")
+        console.log(c);
+        var d=new Date("25,JAN,2005")
+        console.log(d);
+        console.log(a.getDate());
+        console.log(a.getMonth()+1);
+        console.log(a.getFullYear());
+        console.log(a.getHours());
+        console.log(a.getMinutes());
+        console.log(a.getSeconds());
+        console.log(a.getMilliseconds());
+        console.log(a.getDay());
+        console.log(a.getTime());
+        console.log(a.getTimezoneOffset());
+        var f=new Date(1000)
+        console.log(f);
+        var g=new Date(9000)
+        console.log(g);
+    </script>
+    
+</body>
+</html>
